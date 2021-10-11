@@ -34,23 +34,24 @@ I placed also the fluid-font-utils here.
 #### 1-Themes:
 Theme settings - colors, fonts, spaces etc. Set up so the theme can be easily changed dependent on project.
 <br>
-  -[x] Color variables
-  -[x]Spacing variables
-  -[x]Breakpoints variables
-  -[x]Typography variables
+- Color variables
+- Spacing variables
+- Breakpoints variables
+- Typography variables
 
 #### 2-Utilites:
 The base folder includes classes, variables, mixins and functions for the foundation for developing (building) a site with a coherent system. Each utility has it's folder, in which there are functions, mixins and mapping.
 <br>
-  -[x] Border functions, mixins, mappings
-  -[x] Breakpoint mixins, mapping
-  -[x] Color functions, mixins, mapping
-  -[x] Space - functions, mapping.
-  -[x] Typography: Mapping, mixins, functions for font-sizes and typography structure. 
-  Fluid font function & mixins. Function
-  -[] Layout grid, containers: mixins.
-  -[] Elevation/ Shadows / Depth
-  -[] Motion
+- Border functions, mixins, mappings
+- Breakpoint mixins, mapping
+- Color functions, mixins, mapping
+- Space - functions, mapping.
+- Typography: Mapping, mixins, functions for font-sizes and typography structure. 
+- Fluid font function & mixins. Function
+To do:
+- Layout grid, containers: mixins.
+- Elevation/ Shadows / Depth
+- Motion
 <br>
 
 #### Base:
