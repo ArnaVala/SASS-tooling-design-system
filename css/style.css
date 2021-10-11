@@ -730,7 +730,10 @@ section {
 }
 @media screen and (min-width: 320px) {
   .av-text-heading1 {
-    font-size: calc( 60px + 36 * ((100vw - 320px) / 1120) );
+    font-size: calc(
+          60px + 36 *
+            ((100vw - 320px) / 1120)
+        );
   }
 }
 @media screen and (min-width: 1440px) {
@@ -751,7 +754,10 @@ section {
 }
 @media screen and (min-width: 320px) {
   .av-text-heading2 {
-    font-size: calc( 40px + 20 * ((100vw - 320px) / 1120) );
+    font-size: calc(
+          40px + 20 *
+            ((100vw - 320px) / 1120)
+        );
   }
 }
 @media screen and (min-width: 1440px) {
@@ -910,7 +916,10 @@ h1 {
 }
 @media screen and (min-width: 320px) {
   h1 {
-    font-size: calc( 60px + 36 * ((100vw - 320px) / 1120) );
+    font-size: calc(
+          60px + 36 *
+            ((100vw - 320px) / 1120)
+        );
   }
 }
 @media screen and (min-width: 1440px) {
@@ -931,7 +940,10 @@ h2 {
 }
 @media screen and (min-width: 320px) {
   h2 {
-    font-size: calc( 40px + 20 * ((100vw - 320px) / 1120) );
+    font-size: calc(
+          40px + 20 *
+            ((100vw - 320px) / 1120)
+        );
   }
 }
 @media screen and (min-width: 1440px) {
@@ -967,9 +979,13 @@ p {
   text-rendering: optimizeLegibility;
 }
 
+/* empty */
+/* empty */
+/* empty */
+/*empty*/
 .section-intro {
   background-color: #1f0066;
   color: white;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*empty*/
