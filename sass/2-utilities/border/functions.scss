@@ -1,0 +1,15 @@
+// ** BORDER FUNCTIONS ** //
+// Returns the border-weight value for a variant.
+
+/// @param {String} $variant - The key for the a variant.
+/// @return {Number} The spacing for the variant (in milliseconds).
+
+@function av-border-weight($variant: thin) {
+  $get-value: map-get($av-border-weight-map, $variant);
+
+  @if type-of($get-value) == number {
+    @return $get-value;
+  } @else {
+    @error 'border-weight variant `#{$variant}` not found. Available variants: #{$av-border-weight-map}';
+  }
+}

@@ -1,0 +1,148 @@
+// ** TYPOGRAPHY MIXINS **//
+///
+/// @param {String} $weight - light, regular, medium, semibold, bold.
+
+// Creating mixins for text types
+// Pass in / change font-weight easily
+@mixin av-text-heading1($weight: bold) {
+  @include fluid-font(320px, 1440px, 60px, 96px);
+  line-height: av-line-height(heading1);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(heading1);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-heading2($weight: semibold) {
+  @include fluid-font(320px, 1440px, 40px, 60px);
+  line-height: av-line-height(heading2);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(heading2);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-heading3($weight: regular) {
+  font-size: av-font-size(heading3);
+  line-height: av-line-height(heading3);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(heading3);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-heading4($weight: regular) {
+  font-size: av-font-size(heading4);
+  line-height: av-line-height(heading4);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(heading4);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-heading5($weight: regular) {
+  font-size: av-font-size(heading5);
+  line-height: av-line-height(heading5);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(heading5);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-heading6($weight: semibold) {
+  font-size: av-font-size(heading6);
+  line-height: av-line-height(heading6);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(heading6);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-subtitle2($weight: semibold) {
+  font-size: av-font-size(subtitle2);
+  line-height: av-line-height(subtitle2);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(subtitle2);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-subtitle1($weight: regular) {
+  font-size: av-font-size(subtitle1);
+  line-height: av-line-height(subtitle1);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(subtitle1);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-body-small($weight: regular) {
+  font-size: av-font-size(body-small);
+  line-height: av-line-height(body-small);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(body-small);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-body($weight: regular) {
+  font-size: av-font-size(body);
+  line-height: av-line-height(body);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(body);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-body-big($weight: regular) {
+  font-size: av-font-size(body-big);
+  line-height: av-line-height(body-big);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(body-big);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-eyebrow($weight: regular) {
+  font-size: av-font-size(eyebrow);
+  line-height: av-line-height(eyebrow);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(eyebrow);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-caption($weight: regular) {
+  font-size: av-font-size(caption);
+  line-height: av-line-height(caption);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(caption);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin av-text-link($weight: regular) {
+  line-height: av-line-height(link);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(link);
+  text-rendering: optimizeLegibility;
+
+  a {
+    text-decoration: underline;
+    text-rendering: optimizeLegibility;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin av-text-list($weight: regular) {
+  font-size: av-font-size(list);
+  line-height: av-line-height(list);
+  font-weight: av-font-weight($weight);
+  font-family: $av-text-font-family;
+  letter-spacing: av-letter-spacing(list);
+  text-rendering: optimizeLegibility;
+}

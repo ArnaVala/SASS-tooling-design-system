@@ -1,0 +1,68 @@
+/** COLOR SYSTEM **/
+/* here I can use SASS mapping to create a consistent color theme usable in development, by creating
+mixins and functions seen in the accompanied files in this folder */
+
+$av-color-map: (
+  background: (
+    // BRAND COLORS
+    brand: $av-color-primary-50,
+    brand-2: $av-color-secondary-50,
+    brand-3: $av-color-tertiary-50,
+    brand-focus: $av-color-primary-70,
+    brand-hover: $av-color-primary-30,
+    //when the brand color is on a dark bg
+    brand-on-dark: $av-color-primary-80,
+    brand-on-dark-focus: $av-color-primary-40,
+    brand-on-dark-hover: $av-color-primary-20,
+    // CANVAS COLORS
+    // Background colors used on the canvas/body, e.g. bigger elements
+    canvas: $av-color-neutral-10,
+    canvas-tint: $av-color-neutral-20,
+    canvas-shade: $av-color-neutral-30,
+    // canvas on dark
+    canvas-on-dark: $av-color-primary-70,
+    canvas-tinted-on-dark: $av-color-neutral-70,
+    canvas-shaded-on-dark: $av-color-neutral-90,
+    /* TO DO 
+    success
+    negative
+    info */
+  ),
+  text: (
+    // text colors
+    primary: $av-color-neutral-90,
+    primary-on-dark: $av-color-neutral-10,
+    secondary: $av-color-neutral-70,
+    secondary-on-dark: $av-color-neutral-40,
+    // link colors
+    link: $av-color-primary-50,
+    link-focus: $av-color-primary-70,
+    link-hover: $av-color-primary-30,
+    link-on-dark: $av-color-primary-10,
+    link-on-dark-focus: $av-color-primary-30,
+    /* TO DO 
+    success
+    negative
+    info */
+  ),
+  border: (
+    primary: $av-color-neutral-30,
+    primary-darker: $av-color-neutral-60,
+    primary-on-dark: $av-color-neutral-10,
+    secondary: $av-color-neutral-20,
+    secondary-on-dark: $av-color-neutral-50,
+    // brand
+    brand: $av-color-primary-50,
+    brand-on-dark: $av-color-primary-20,
+  ),
+  icons: (
+    default: $av-color-neutral-90,
+    default-on-dark: $av-color-neutral-20,
+    brand: $av-color-primary-50,
+    brand-on-dark: $av-color-primary-20,
+    /* TO DO 
+    success
+    negative
+    info */
+  ),
+);

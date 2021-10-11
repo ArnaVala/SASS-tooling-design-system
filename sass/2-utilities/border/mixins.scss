@@ -1,0 +1,5 @@
+// ** BORDER MIXIN ** //
+// passing in width, color, type
+@mixin av-border($width: thin, $color: primary, $type: solid) {
+  border: av-border-weight($width) av-color(border, $color) $type;
+}

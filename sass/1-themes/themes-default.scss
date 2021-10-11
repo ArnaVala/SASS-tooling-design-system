@@ -1,0 +1,75 @@
+// AV Design System - default theme
+
+// ** FONT - TYPEFACE ** //
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+$av-font-family: 'Space Grotesk', sans-serif;
+$av-base-font-size: 16px;
+
+// ** SPACING - 8-point grid system ** //
+// Using a 8-point-grid, multiply this base value for dimensions, padding, margins etc.
+$av-base-point-grid: 8px;
+
+// ** BORDER RADIUS ** //
+// applied to containers cards etc if rounded corners
+$av-base-border-radius: 4px; // use even numbers 4-8-12-16 etc.
+
+// ** COLOR PALETTE ** //
+/* Color Palette - light theme. It is possible to change the colors easily to other theme colors. Primary, Secondary and Tertiary colors are for Brand colors.
+In this example I use HSL colors (HUE-SATURATION-LIGHTNESS) - -50 is the base color and I use the Lightness to make darker/lighter shades and tints for each base-color. If not useing a specific color value, then output NULL e.g:
+$av-color-primary-90: NULL 
+*/
+
+// Primary colors
+$av-color-primary-90: hsl(258, 100%, 10%);
+$av-color-primary-80: hsl(258, 100%, 20%);
+$av-color-primary-70: hsl(258, 100%, 30%);
+$av-color-primary-60: hsl(258, 100%, 40%);
+$av-color-primary-50: hsl(258, 100%, 50%);
+$av-color-primary-40: hsl(258, 100%, 60%);
+$av-color-primary-30: hsl(258, 100%, 70%);
+$av-color-primary-20: hsl(258, 100%, 80%);
+$av-color-primary-10: hsl(258, 100%, 90%);
+
+// Secondary colors
+$av-color-secondary-90: hsl(50, 80%, 10%);
+$av-color-secondary-80: hsl(50, 80%, 20%);
+$av-color-secondary-70: hsl(50, 80%, 30%);
+$av-color-secondary-60: hsl(50, 80%, 40%);
+$av-color-secondary-50: hsl(50, 80%, 50%);
+$av-color-secondary-40: hsl(50, 80%, 60%);
+$av-color-secondary-30: hsl(50, 80%, 70%);
+$av-color-secondary-20: hsl(50, 80%, 80%);
+$av-color-secondary-10: hsl(50, 80%, 90%);
+
+// Tertiary colors
+$av-color-tertiary-90: hsl(180, 80%, 10%);
+$av-color-tertiary-80: hsl(180, 80%, 20%);
+$av-color-tertiary-70: hsl(180, 80%, 30%);
+$av-color-tertiary-60: hsl(180, 80%, 40%);
+$av-color-tertiary-50: hsl(180, 80%, 50%);
+$av-color-tertiary-40: hsl(180, 80%, 60%);
+$av-color-tertiary-30: hsl(180, 80%, 70%);
+$av-color-tertiary-20: hsl(180, 80%, 80%);
+$av-color-tertiary-10: hsl(180, 80%, 90%);
+
+// Neutral colors
+// for text, background, borders, shadows etc.
+$av-color-neutral-90: hsl(220, 15%, 0%); // black
+$av-color-neutral-80: hsl(220, 15%, 12.5%);
+$av-color-neutral-70: hsl(220, 15%, 25%);
+$av-color-neutral-60: hsl(220, 15%, 37.5%);
+$av-color-neutral-50: hsl(220, 15%, 50%);
+$av-color-neutral-40: hsl(220, 15%, 62.5%);
+$av-color-neutral-30: hsl(220, 15%, 75%);
+$av-color-neutral-20: hsl(220, 15%, 87.5%);
+$av-color-neutral-10: hsl(220, 15%, 100%); // white
+
+// Success
+/*ToDo*/
+
+// Warning
+/*ToDo*/
+
+// Info
+/*ToDo*/

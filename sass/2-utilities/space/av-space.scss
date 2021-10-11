@@ -1,0 +1,75 @@
+$av-point-unit: 8px !default;
+
+// Point-Grid System
+// Use multiples of this value to define dimensions, padding, and margin of both block and inline elements.
+$av-space-01: av-rem(1px); // 1px
+$av-space-02: av-rem(2px); // 2px
+$av-space-04: av-rem(4px); // 4px
+$av-space-08: av-rem(8px); // 8px
+$av-space-12: av-rem(12px); // 12px
+$av-space-16: av-rem(16px); // 16px
+$av-space-20: av-rem(20px); // 20px
+$av-space-24: av-rem(24px); // 24px
+$av-space-32: av-rem(32px); // 32px
+$av-space-40: av-rem(40px); // 40px
+$av-space-48: av-rem(48px); // 48px
+$av-space-64: av-rem(64px); // 64px
+$av-space-80: av-rem(80px); // 80px
+$av-space-96: av-rem(96px); // 96px
+$av-space-128: av-rem(128px); // 128px
+$av-space-160: av-rem(160px); // 160px
+
+$av-space-map: (
+  none: 0,
+  space-01: $av-space-01,
+  space-02: $av-space-02,
+  space-04: $av-space-04,
+  space-08: $av-space-08,
+  space-12: $av-space-12,
+  space-16: $av-space-16,
+  space-20: $av-space-20,
+  space-24: $av-space-24,
+  space-32: $av-space-32,
+  space-40: $av-space-40,
+  space-48: $av-space-48,
+  space-64: $av-space-64,
+  space-80: $av-space-80,
+  space-96: $av-space-96,
+  space-128: $av-space-128,
+  space-160: $av-space-160,
+) !default;
+
+// Create padding rules for containers s-m-l
+$av-container-map: (
+  s: (
+    dense: $av-space-04 $av-space-08,
+    // 4px 8px
+    default: $av-space-08,
+    // 8px
+    open: $av-space-12 $av-space-08 // 12px 8px,,,,,,,,,,,,,,,,,,,,,
+  ),
+  m: (
+    dense: $av-space-08 $av-space-16,
+    // 8px 16px
+    default: $av-space-16,
+    // 16px
+    open: $av-space-24 $av-space-16 // 24px 16px,,,,,,,,,,,,,,,,,,,,,
+  ),
+  l: (
+    dense: $av-space-16 $av-space-24,
+    // 16px 24px
+    default: $av-space-24,
+    // 24px
+    open: $av-space-32 $av-space-24 // 32px 24px,,,,,,,,,,,,,,,,,,,,,
+  ),
+  xl: (
+    dense: $av-space-32 $av-space-48,
+    default: $av-space-32,
+    open: $av-space-48 $av-space-32,
+  ),
+  xxl: (
+    dense: $av-space-48 $av-space-64,
+    default: $av-space-48,
+    open: $av-space-64 $av-space-48,
+  ),
+) !default;

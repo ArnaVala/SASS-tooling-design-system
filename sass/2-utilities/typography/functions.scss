@@ -1,0 +1,63 @@
+// ** TYPOGRAPHY FUNCTIONS ** //
+/// Returns the font size for a given range.
+///
+/// @param {Number} $range - The font style.
+/// @return {Number} The font-size for the text-style.
+@function av-font-size($range) {
+  $get-font-size: map-get($av-font-size-map, $range);
+  @if type-of($get-font-size) != null {
+    @return $get-font-size;
+  } @else {
+    @error 'Font size range `#{$range}` not found. Available font sizes: #{$av-font-size-map}';
+  }
+}
+
+/// Returns the line height for a given range.
+///
+/// @param {Number} $range - The font style.
+/// @return {Number} The line-height for the text-style.
+@function av-line-height($range: normal) {
+  $get-line-height: map-get($av-line-height-map, $range);
+  @if type-of($get-line-height) != null {
+    @return $get-line-height;
+  } @else {
+    @error 'Line height `#{$range}` not found. Available line heights: #{$av-line-height-map}';
+  }
+}
+
+/// Returns the font weight for a given weight definition.
+///
+/// @param {String} $weight - The font weight.
+/// @return {Number} The font-weight for the text-weight.
+@function av-font-weight($weight: normal) {
+  $get-font-weight: map-get($av-font-weight-map, $weight);
+  @if type-of($get-font-weight) != null {
+    @return $get-font-weight;
+  } @else {
+    @error 'Font weight `#{$weight}` not found. Available font weights: #{$av-font-weight-map}';
+  }
+}
+
+/// Returns the letter spacing for a given definition.
+///
+/// @param {String} $letter-spacing - The letter spacing.
+/// @return {Number} The letter-spacing.
+@function av-letter-spacing($letter-spacing: 0) {
+  $get-letter-spacing: map-get($av-letter-spacing-map, $letter-spacing);
+  @if type-of($get-letter-spacing) != null {
+    @return $get-letter-spacing;
+  } @else {
+    @error 'letter spacing `#{$letter-spacing}` not found. Available letter spacings: #{$av-letter-spacing-map}';
+  }
+}
+
+// ** FLUID TYPE **//
+// This is a function that removes the unit of a number (for example: px,rem,em,vw).
+//  fluid-font mixin (see: _mixins.scss)
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}

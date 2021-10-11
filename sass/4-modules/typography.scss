@@ -1,0 +1,84 @@
+// Typography classes - @include typography-mixins.scss
+.av-text-heading1 {
+  @include av-text-heading1();
+}
+
+.av-text-heading2 {
+  @include av-text-heading2();
+}
+
+.av-text-heading3 {
+  @include av-text-heading3();
+}
+
+.av-text-heading4 {
+  @include av-text-heading4();
+}
+
+.av-text-heading5 {
+  @include av-text-heading5();
+}
+
+.av-text-heading6 {
+  @include av-text-heading6();
+}
+
+.av-text-subtitle2 {
+  @include av-text-subtitle2();
+}
+
+.av-text-subtitle1 {
+  @include av-text-subtitle1();
+}
+
+.av-text-body-small {
+  @include av-text-body-small();
+}
+
+.av-text-body {
+  @include av-text-body();
+}
+
+.av-text-body-big {
+  @include av-text-body-big();
+}
+
+.av-text-eyebrow {
+  @include av-text-eyebrow();
+}
+
+.av-text-caption {
+  @include av-text-caption();
+}
+
+.av-text-link {
+  @include av-text-link();
+}
+
+.av-text-list {
+  @include av-text-list();
+}
+
+a {
+  @include av-text-link();
+}
+
+h1 {
+  @include av-text-heading1();
+}
+
+h2 {
+  @include av-text-heading2();
+}
+
+h3 {
+  @include av-text-heading3();
+}
+
+h4 {
+  @include av-text-heading4();
+}
+
+p {
+  @include av-text-body();
+}

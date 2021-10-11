@@ -1,0 +1,14 @@
+// ** SASS PARTIALS ** //
+// import Sass partials into main stylesheet which is compiled into css with GULP
+
+// Utilities
+
+// Design System
+@import './0-settings/settings-dir';
+@import './1-themes/themes-dir';
+@import './2-utilities/utils-dir';
+@import './3-base/base-dir';
+@import './4-modules/modules-dir';
+@import './5-layout/layout-dir';
+@import './6-sections/sections-dir';
+@import './7-pages/page-dir';

@@ -1,0 +1,40 @@
+// ** LAYOUT MIXINS **//
+
+// flexbox
+@mixin av-flex-hl() {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+@mixin av-flex-vl() {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+@mixin av-flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// GRID MIXIN
+@mixin av-grid($columns: 12, $gutter: 24px, $margin: 0) {
+  margin: $margin;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat($columns, 1fr);
+  // grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  grid-column-gap: $gutter;
+  grid-row-gap: $gutter;
+  // grid-template-rows: min-content 1fr;
+  // max-width: 1920px;
+}
+
+// COLUMNS STRETCH
+@mixin av-columns-stretch($column-start: 1, $column-end: 12) {
+  grid-column: $column-start / $column-end;
+}

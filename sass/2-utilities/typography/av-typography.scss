@@ -1,0 +1,68 @@
+$av-text-font-family: $av-font-family;
+$av-text-base-font-size: $av-base-font-size;
+
+// Using Sass mapping used with functions and mixins
+// Font-size
+$av-font-size-map: (
+  heading1: av-rem(96px),
+  heading2: av-rem(60px),
+  heading3: av-rem(48px),
+  heading4: av-rem(34px),
+  heading5: av-rem(24px),
+  heading6: av-rem(20px),
+  subtitle2: av-rem(14px),
+  subtitle1: av-rem(16px),
+  body-small: av-rem(14px),
+  body: av-rem(16px),
+  body-big: av-rem(18px),
+  eyebrow: av-rem(14px),
+  caption: av-rem(14px),
+  list: av-rem(16px),
+) !default;
+
+// Line height
+$av-line-height-map: (
+  heading1: normal,
+  heading2: normal,
+  heading3: normal,
+  heading4: normal,
+  heading5: normal,
+  heading6: normal,
+  subtitle2: 1.6rem,
+  subtitle1: 1.6rem,
+  body-small: 1.5rem,
+  body: 1.5rem,
+  body-big: 1.5rem,
+  eyebrow: 1.5rem,
+  caption: 1.5rem,
+  link: 1.5rem,
+  list: 1.5rem,
+) !default;
+
+// Letter spacing
+$av-letter-spacing-map: (
+  heading1: -1.5px,
+  heading2: -0.5px,
+  heading3: 0,
+  heading4: 0.25px,
+  heading5: 0,
+  heading6: 0.15px,
+  subtitle2: 0.1px,
+  subtitle1: 0.15px,
+  body-small: 0.7px,
+  body: 0.7px,
+  body-big: 0.7px,
+  eyebrow: 0.4px,
+  caption: 0.4px,
+  link: 0,
+  list: 0,
+) !default;
+
+// Font weight
+$av-font-weight-map: (
+  bold: 700,
+  semibold: 600,
+  medium: 500,
+  regular: 400,
+  light: 300,
+) !default;

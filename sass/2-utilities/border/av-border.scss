@@ -1,0 +1,16 @@
+// ** BORDERS ** //
+
+// Using base-unit functions
+// Change border thickness variables here
+$av-border-thin: av-rem(1px);
+$av-border-thick: av-rem(2px);
+$av-border-thicker: av-rem(4px);
+$av-border-thickest: av-rem(6px);
+
+// Border mapping
+$av-border-weight-map: (
+  thin: $av-border-thin,
+  thick: $av-border-thick,
+  thicker: $av-border-thicker,
+  thickest: $av-border-thickest,
+);

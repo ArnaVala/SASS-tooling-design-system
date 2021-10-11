@@ -1,0 +1,37 @@
+// ** COLOR MIXINS  ** //
+//applying av-color function to create color classes
+.av-color-text-primary {
+  color: av-color(text, primary);
+}
+
+.av-color-text-secondary {
+  color: av-color(text, secondary);
+}
+
+.av-color-text-link {
+  a {
+    color: av-color(text, link);
+  }
+
+  a:focused {
+    color: av-color(text, link-focus);
+  }
+}
+
+// Dark
+.av-color-text-primary-on-dark {
+  color: av-color(text, primary-on-dark);
+}
+
+.av-color-text-secondary-on-dark {
+  color: av-color(text, secondary-on-dark);
+}
+
+.av-color-text-link-on-dark {
+  a {
+    color: av-color(text, link-on-dark);
+  }
+  a:focused {
+    color: av-color(text, link-on-dark-focus);
+  }
+}

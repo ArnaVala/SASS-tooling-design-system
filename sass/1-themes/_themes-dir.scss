@@ -1,0 +1,9 @@
+/* 
+THEMES - themes folder contains the base theme settings such as colors and typography. 
+The theme colors and font can be easily changed in these files. Also, it is also possible to
+define other themes, such as a dark (or light) theme if needed.
+*/
+
+@import './themes-default.scss';
+
+// here you can import other themes as well, e.g. a dark-theme etc.

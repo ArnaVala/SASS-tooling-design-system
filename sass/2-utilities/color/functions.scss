@@ -1,0 +1,20 @@
+// ** COLOR FUNCTIONS **//
+// Returns the color value for a given color name and group.
+///
+/// @param {String} $category - The color's type.
+/// @param {Number} $type - The darkness/lightness of the color. Defaults to base. The higher the number, the darker the color.
+/// @return {Color} The color value.
+
+@function av-color($category, $type) {
+  $get-color: map-get(map-get($av-color-map, $category), $type);
+
+  @if map-has-key($av-color-map, $get-color) {
+    $get-color: map-get(map-get($av-color-map, $get-color), $type);
+  }
+
+  @if type-of($get-color) == color {
+    @return $get-color;
+  } @else {
+    @error 'Color `#{$category} - #{$type}` not found. Available colors: #{$av-color-map}';
+  }
+}

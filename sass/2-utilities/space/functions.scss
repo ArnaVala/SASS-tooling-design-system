@@ -1,0 +1,29 @@
+// **  SPACING FUNCTION **/
+// Returns the spacing value for a given variant.
+/// @param {String} $space - how much space do you need.
+/// @return {Number} The spacing for the variant in px.
+
+@function av-space($space: $space-08) {
+  $get-value: map-get($av-space-map, $space);
+
+  @if type-of($get-value) == number {
+    @return $get-value;
+  } @else {
+    @error 'space variant `#{$space}` not found. Available variants: #{$av-space-map}';
+  }
+}
+
+// Mapping container paddings
+///
+/// @param {String} $item-spacing - how much space do you need.
+/// @return {Number} The spacing for the variant in px.
+
+@function av-container($type: m, $space: default) {
+  $get-space: map-get(map-get($av-container-map, $type), $space);
+
+  @if map-has-key($av-container-map, $get-space) {
+    $get-space: map-get(map-get($av-container-map, $get-space), $space);
+  }
+
+  @return $get-space;
+}
